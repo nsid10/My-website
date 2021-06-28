@@ -473,7 +473,15 @@ img {
 }
 /*==================== CONTACT ME ====================*/
 .contact__section {
-    justify-self: center;
+    justify-self: left;
+    padding-left: 2rem;
+}
+
+.contact__links {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
 }
 
 /*==================== FOOTER ====================*/
