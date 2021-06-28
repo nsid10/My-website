@@ -422,6 +422,13 @@ img {
 }
 
 /*==================== EXPERIENCE ====================*/
+.experience__section {
+    justify-self: center;
+}
+
+.experience__data {
+    padding-bottom: 2rem;
+}
 
 /*==================== EDUCATION ====================*/
 .education__section {
@@ -431,9 +438,43 @@ img {
 .education__data {
     padding-bottom: 2rem;
 }
-/*==================== PUBLICATIONS ====================*/
 
+/*==================== PUBLICATIONS ====================*/
+.publications__container {
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+}
+
+.publications__section {
+    justify-self: center;
+}
+
+.publications__data {
+    padding-bottom: 2rem;
+}
+
+.publications__list::marker {
+    content: "[" counter(list-item, decimal) ".] ";
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+}
+.publications__list {
+    display: list-item;
+}
+
+.publications__link-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.publications__link-icon:hover {
+    color: var(--first-color-alt);
+}
 /*==================== CONTACT ME ====================*/
+.contact__section {
+    justify-self: center;
+}
 
 /*==================== FOOTER ====================*/
 .footer {
