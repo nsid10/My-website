@@ -306,10 +306,6 @@ img {
     margin-left: 1.5rem;
 }
 
-/* .home__img img {
-    width: 190px;
-} */
-
 .home__data {
     grid-column: 1/3;
 }
@@ -354,7 +350,7 @@ img {
 }
 
 .home__scroll-arrow {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 /*==================== BUTTONS ====================*/
@@ -454,7 +450,7 @@ img {
 }
 
 .publications__list::marker {
-    content: "[" counter(list-item, decimal) ".] ";
+    content: "[" counter(list-item, decimal) "] ";
     font-size: var(--normal-font-size);
     font-weight: 500;
     color: var(--title-color);
@@ -472,16 +468,22 @@ img {
     color: var(--first-color-alt);
 }
 /*==================== CONTACT ME ====================*/
-.contact__section {
+/* .contact__section {
     justify-self: left;
     padding-left: 2rem;
-}
+} */
 
 .contact__links {
-    font-size: var(--h3-font-size);
+    font-size: var(--body-font);
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+}
+
+.contact-icon,
+.contact__links-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
 }
 
 /*==================== FOOTER ====================*/
@@ -599,7 +601,7 @@ img {
     }
 
     .section {
-        padding: 12rem 0 12rem;
+        padding: 8rem 0 6rem;
     }
 
     .section__subtitle {
