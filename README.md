@@ -1,5 +1,5 @@
-Responsive Portfolio Website Using Html, Css and JavaScript
+Personal portfolio website
 
-Template from https://github.com/bedimcode/responsive-portfolio-website-Alexa
+Template from https://github.com/bedimcode
 
-My URL https://nsid.gitlab.io/my-website/
+My URL https://nsid.gitlab.io/my-website/, https://nahiansiddique.com/
