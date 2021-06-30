@@ -487,9 +487,9 @@ img {
 }
 
 /*==================== FOOTER ====================*/
-.footer {
+/* .footer {
     padding-top: 8rem;
-}
+} */
 
 .footer__bg {
     background-color: var(--first-color-second);
