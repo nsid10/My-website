@@ -436,6 +436,39 @@ img {
 }
 
 /*==================== PUBLICATIONS ====================*/
+.publications__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+
+.publications__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.publications__button:hover {
+    color: var(--first-color);
+}
+
+.publications__button.publications__active {
+    color: var(--first-color);
+}
+
+.publications__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+
+.publications [data-content] {
+    display: none;
+}
+
+.publications__active[data-content] {
+    display: block;
+}
+
 .publications__container {
     padding-left: 2.5rem;
     padding-right: 2rem;
@@ -460,28 +493,28 @@ img {
 }
 
 .publications__link-icon {
-    font-size: 1.25rem;
+    font-size: var(--h3-font-size);
     color: var(--first-color);
 }
 
 .publications__link-icon:hover {
     color: var(--first-color-alt);
 }
-/*==================== CONTACT ME ====================*/
-/* .contact__section {
+/*==================== social ME ====================*/
+/* .social__section {
     justify-self: left;
     padding-left: 2rem;
 } */
 
-.contact__links {
+.social__links {
     font-size: var(--body-font);
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
 }
 
-.contact-icon,
-.contact__links-icon {
+.social-icon,
+.social__links-icon {
     font-size: 1.5rem;
     color: var(--first-color);
 }
@@ -601,7 +634,7 @@ img {
     }
 
     .section {
-        padding: 8rem 0 6rem;
+        padding: 8rem 0 2rem;
     }
 
     .section__subtitle {

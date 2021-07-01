@@ -31,7 +31,25 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
 
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== TABS ====================*/
+const tabs = document.querySelectorAll("[data-target]"),
+    tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach((tabContent) => {
+            tabContent.classList.remove("publications__active");
+        });
+        target.classList.add("publications__active");
+
+        tabs.forEach((tab) => {
+            tab.classList.remove("publications__active");
+        });
+        tab.classList.add("publications__active");
+    });
+});
 
 /*==================== SERVICES MODAL ====================*/
 
