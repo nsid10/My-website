@@ -492,6 +492,10 @@ img {
     display: list-item;
 }
 
+.publications__highlight {
+    color: var(--title-color);
+}
+
 .publications__link-icon {
     font-size: var(--h3-font-size);
     color: var(--first-color);
