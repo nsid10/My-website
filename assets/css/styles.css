@@ -634,7 +634,7 @@ img {
     }
 
     .section {
-        padding: 8rem 0 2rem;
+        padding-top: 8rem;
     }
 
     .section__subtitle {
