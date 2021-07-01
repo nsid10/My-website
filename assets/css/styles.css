@@ -147,6 +147,7 @@ img {
 
 .section__title {
     font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-3);
 }
 
 .section__subtitle {
@@ -436,10 +437,14 @@ img {
 }
 
 /*==================== PUBLICATIONS ====================*/
+.publications__title {
+    margin-bottom: var(--mb-1);
+}
+
 .publications__tabs {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
 }
 
 .publications__button {
