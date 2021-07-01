@@ -500,7 +500,7 @@ img {
 .publications__link-icon:hover {
     color: var(--first-color-alt);
 }
-/*==================== social ME ====================*/
+/*==================== SOCIALS ====================*/
 /* .social__section {
     justify-self: left;
     padding-left: 2rem;
@@ -634,7 +634,7 @@ img {
     }
 
     .section {
-        padding-top: 8rem;
+        padding-top: 6rem;
     }
 
     .section__subtitle {
@@ -673,6 +673,10 @@ img {
 
     .change-theme {
         margin: 0;
+    }
+
+    .home {
+        padding-top: 8rem;
     }
 
     .home__container {
