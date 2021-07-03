@@ -29,9 +29,26 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== EXPERIENCE ====================*/
+const expData = document.getElementsByClassName("experience__data"),
+    expHeader = document.querySelectorAll(".experience__header");
 
-/*==================== TABS ====================*/
+function toggleExperience() {
+    let itemClass = this.parentNode.className;
+
+    for (i = 0; i < expData.length; i++) {
+        expData[i].className = "experience__data experience__close";
+    }
+    if (itemClass === "experience__data experience__close") {
+        this.parentNode.className = "experience__data experience__open";
+    }
+}
+
+expHeader.forEach((el) => {
+    el.addEventListener("click", toggleExperience);
+});
+
+/*==================== PUBLICATIONS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]");
 

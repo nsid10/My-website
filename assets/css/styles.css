@@ -33,6 +33,7 @@
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: 0.938rem;
+    --semi-font-size: 0.888rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
 
@@ -125,10 +126,6 @@ h3,
 h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
-}
-
-ul {
-    list-style: none;
 }
 
 a {
@@ -224,6 +221,7 @@ img {
 }
 
 .nav__list {
+    list-style: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
@@ -427,6 +425,66 @@ img {
     padding-bottom: 2rem;
 }
 
+.experience__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-1);
+    cursor: pointer;
+}
+
+.experience__title {
+    font-size: var(--h3-font-size);
+}
+
+.experience__subtitle,
+.experience__calender {
+    font-size: var(--normal-font-size);
+}
+
+.experience__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.experience__arrow:hover {
+    color: var(--first-color-alt);
+}
+
+.experience__close .experience__description {
+    height: 0;
+    overflow: hidden;
+}
+
+.experience__open .experience__description {
+    height: max-content;
+    margin-bottom: var(--mb-1);
+}
+
+.experience__open .experience__arrow {
+    transform: rotate(-180deg);
+}
+
+.experience__description {
+    color: var(--title-color);
+    margin: 0 var(--mb-2);
+    font-size: var(--semi-font-size);
+}
+
+.experience__list {
+    list-style: none;
+}
+
+.experience__list li::before {
+    content: "\2022";
+    color: var(--first-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.25rem;
+}
+
 /*==================== EDUCATION ====================*/
 .education__section {
     justify-self: center;
@@ -490,7 +548,7 @@ img {
 .publications__list::marker {
     content: "[" counter(list-item, decimal) "] ";
     font-size: var(--normal-font-size);
-    font-weight: 500;
+    font-weight: var(--font-medium);
     color: var(--title-color);
 }
 .publications__list {
@@ -713,6 +771,10 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+    .container {
+        max-width: 924px;
+    }
+
     .header,
     .main {
         padding: 0;
