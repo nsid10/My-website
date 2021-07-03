@@ -325,8 +325,7 @@ img {
 }
 
 .home__scroll {
-    /* display: none; */
-    display: block;
+    display: none;
 }
 
 .home__scroll-button {
@@ -672,6 +671,20 @@ img {
         width: 180px;
         height: 180px;
         margin-left: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .publications__button {
+        font-size: var(--normal-font-size);
+    }
+
+    .publications__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .publications__subtitle {
+        display: none;
     }
 }
 
