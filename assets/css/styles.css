@@ -139,7 +139,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding: 2rem 0 4rem;
+    padding: 4rem 0 4rem;
 }
 
 .section__title {
@@ -325,7 +325,8 @@ img {
 }
 
 .home__scroll {
-    display: none;
+    /* display: none; */
+    display: block;
 }
 
 .home__scroll-button {
@@ -419,6 +420,7 @@ img {
 /*==================== EXPERIENCE ====================*/
 .experience__section {
     justify-self: center;
+    max-width: 840px;
 }
 
 .experience__data {
@@ -568,10 +570,9 @@ img {
     color: var(--first-color-alt);
 }
 /*==================== SOCIALS ====================*/
-/* .social__section {
-    justify-self: left;
-    padding-left: 2rem;
-} */
+.social__section {
+    justify-self: center;
+}
 
 .social__links {
     font-size: var(--body-font);
@@ -772,12 +773,20 @@ img {
 /* For large devices */
 @media screen and (min-width: 1024px) {
     .container {
-        max-width: 924px;
+        max-width: 968px;
+    }
+
+    .nav {
+        max-width: 1068px;
     }
 
     .header,
     .main {
         padding: 0;
+    }
+
+    .section {
+        padding-top: 12rem;
     }
 
     .home__img {
