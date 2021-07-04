@@ -586,6 +586,11 @@ img {
     color: var(--first-color);
 }
 
+.social__links-icons {
+    display: flex;
+    gap: 2em;
+}
+
 /*==================== FOOTER ====================*/
 /* .footer {
     padding-top: 8rem;
@@ -803,8 +808,8 @@ img {
     }
 
     .home__img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 
     .home__social {
