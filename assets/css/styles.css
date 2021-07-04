@@ -384,6 +384,11 @@ img {
     align-self: center;
 }
 
+.about__location {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+
 .about__description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -571,20 +576,16 @@ img {
 /*==================== SOCIALS ====================*/
 .social__section {
     justify-self: center;
-    display: flex;
-    gap: 2em;
 }
 
 .social__links {
-    font-size: var(--body-font);
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
 }
 
-.social-icon,
-.social__links-icon {
-    font-size: 1.5rem;
+.social__icon {
+    font-size: var(--big-font-size);
     color: var(--first-color);
 }
 
@@ -782,6 +783,15 @@ img {
 
     .home__scroll-button {
         margin-left: 3rem;
+    }
+
+    .social__section {
+        display: flex;
+        gap: 4em;
+    }
+
+    .social__icon {
+        font-size: var(--h1-font-size);
     }
 }
 
