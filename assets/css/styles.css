@@ -409,7 +409,7 @@ img {
 /*==================== EXPERIENCE ====================*/
 .experience__section {
     justify-self: center;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .experience__data {
@@ -418,9 +418,12 @@ img {
 
 .experience__header {
     display: flex;
+    justify-items: center;
     align-items: center;
-    margin-bottom: var(--mb-1);
     cursor: pointer;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: var(--mb-1);
 }
 
 .experience__title {
@@ -459,30 +462,35 @@ img {
 
 .experience__description {
     color: var(--title-color);
-    margin: 0 var(--mb-2);
+    padding: var(--mb-0-25) var(--mb-2);
     font-size: var(--normal-font-size);
 }
 
 .experience__list {
-    list-style: none;
+    color: var(--first-color);
 }
 
-.experience__list li::before {
-    content: "\2022";
-    color: var(--first-color);
-    font-weight: bold;
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1.25rem;
+.experience__list-bullet {
+    color: var(--text-color);
 }
 
 /*==================== EDUCATION ====================*/
 .education__section {
     justify-self: center;
+    max-width: 700px;
 }
 
 .education__data {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+.education__title {
+    font-size: var(--h3-font-size);
+}
+
+.education__subtitle,
+.education__calender {
+    font-size: var(--normal-font-size);
 }
 
 /*==================== PUBLICATIONS ====================*/
@@ -567,6 +575,7 @@ img {
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+    cursor: pointer;
 }
 
 .social__icon {
@@ -574,11 +583,15 @@ img {
     color: var(--first-color);
 }
 
-/*==================== FOOTER ====================*/
-/* .footer {
-    padding-top: 8rem;
-} */
+.social__icon:hover {
+    color: var(--first-color-alt);
+}
 
+.social {
+    margin-bottom: 6rem;
+}
+
+/*==================== FOOTER ====================*/
 .footer__bg {
     background-color: var(--first-color-second);
     /* padding: 6px 0 10px; */
@@ -798,6 +811,7 @@ img {
     .home__img {
         width: 250px;
         height: 250px;
+        margin-right: 3rem;
     }
 
     .home__scroll {

@@ -48,6 +48,25 @@ expHeader.forEach((el) => {
     el.addEventListener("click", toggleExperience);
 });
 
+/*==================== EDUCATION ====================*/
+const eduData = document.getElementsByClassName("education__data"),
+    eduHeader = document.querySelectorAll(".education__header");
+
+function toggleEducation() {
+    let itemClass = this.parentNode.className;
+
+    for (i = 0; i < eduData.length; i++) {
+        eduData[i].className = "education__data education__close";
+    }
+    if (itemClass === "education__data education__close") {
+        this.parentNode.className = "education__data education__open";
+    }
+}
+
+eduHeader.forEach((el) => {
+    el.addEventListener("click", toggleEducation);
+});
+
 /*==================== PUBLICATIONS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]");
