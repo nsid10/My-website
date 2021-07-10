@@ -48,8 +48,6 @@ expHeader.forEach((el) => {
     el.addEventListener("click", toggleExperience);
 });
 
-/*==================== EDUCATION ====================*/
-
 /*==================== PUBLICATIONS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]");
@@ -69,10 +67,6 @@ tabs.forEach((tab) => {
         tab.classList.add("publications__active");
     });
 });
-
-/*==================== SERVICES MODAL ====================*/
-
-/*==================== PORTFOLIO SWIPER  ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");

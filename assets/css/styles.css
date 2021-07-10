@@ -139,7 +139,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding: 4rem 0 4rem;
+    padding-top: 4rem;
 }
 
 .section__title {
@@ -149,7 +149,7 @@ img {
 
 .section__subtitle {
     display: block;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     margin-bottom: var(--mb-3);
 }
 
@@ -307,6 +307,29 @@ img {
 
 .home__description {
     margin-bottom: var(--mb-2);
+}
+
+.home__connect {
+    margin-top: 3rem;
+    justify-self: center;
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home__social {
+    justify-self: center;
+    word-spacing: 1rem;
+}
+
+.home__social-icon {
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+}
+
+.home__social-icon:hover {
+    color: var(--first-color-alt);
 }
 
 .home__scroll {
@@ -566,30 +589,7 @@ img {
 .publications__link-icon:hover {
     color: var(--first-color-alt);
 }
-/*==================== SOCIALS ====================*/
-.social__section {
-    justify-self: center;
-}
-
-.social__links {
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
-    cursor: pointer;
-}
-
-.social__icon {
-    font-size: var(--big-font-size);
-    color: var(--first-color);
-}
-
-.social__icon:hover {
-    color: var(--first-color-alt);
-}
-
-.social {
-    margin-bottom: 6rem;
-}
+/*==================== LIFE ====================*/
 
 /*==================== FOOTER ====================*/
 .footer__bg {
@@ -757,14 +757,6 @@ img {
         margin: 0;
     }
 
-    .home {
-        padding-top: 8rem;
-    }
-
-    .home__container {
-        row-gap: 5rem;
-    }
-
     .home__content {
         padding-top: 6rem;
         column-gap: 2rem;
@@ -775,21 +767,20 @@ img {
         height: 220px;
     }
 
+    .home__social {
+        word-spacing: 4rem;
+    }
+
+    .home__social-icon {
+        font-size: var(--h1-font-size);
+    }
+
     .home__scroll {
         display: block;
     }
 
     .home__scroll-button {
         margin-left: 3rem;
-    }
-
-    .social__section {
-        display: flex;
-        gap: 4em;
-    }
-
-    .social__icon {
-        font-size: var(--h1-font-size);
     }
 }
 
@@ -814,12 +805,20 @@ img {
         margin-right: 3rem;
     }
 
+    .home__social-icon {
+        font-size: var(--big-font-size);
+    }
+
+    .home__scroll {
+        margin-top: 1rem;
+    }
+
     .home__scroll {
         margin-left: 4rem;
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1600px) {
     .section {
         padding-top: 11rem;
     }
@@ -833,7 +832,11 @@ img {
         height: 280px;
     }
 
-    .home__container {
-        padding-bottom: 3rem;
+    .home__connect {
+        margin-top: 7rem;
+    }
+
+    .home__scroll {
+        margin-top: 2rem;
     }
 }
