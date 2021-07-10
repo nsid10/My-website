@@ -41,7 +41,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*========== Margins Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
@@ -319,8 +319,9 @@ img {
 }
 
 .home__social {
+    display: flex;
     justify-self: center;
-    word-spacing: 1rem;
+    gap: 1.5rem;
 }
 
 .home__social-icon {
@@ -673,6 +674,10 @@ img {
         height: 180px;
         margin-left: 0.25rem;
     }
+
+    .home__social {
+        gap: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 567px) {
@@ -768,7 +773,7 @@ img {
     }
 
     .home__social {
-        word-spacing: 4rem;
+        gap: 4rem;
     }
 
     .home__social-icon {
