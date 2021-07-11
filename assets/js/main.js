@@ -68,6 +68,31 @@ tabs.forEach((tab) => {
     });
 });
 
+/*==================== LIFE SWIPER ====================*/
+var sl;
+if (window.matchMedia("(max-width: 1000px)").matches) {
+    sl = 1;
+} else if (window.matchMedia("(max-width: 1440px)").matches) {
+    sl = 2;
+} else {
+    sl = 3;
+}
+
+let swiper = new Swiper(".life__container", {
+    // cssMode: true,
+    slidesPerView: sl,
+    spaceBetween: 10,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 

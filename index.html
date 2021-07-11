@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css" />
@@ -43,7 +43,6 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Nahian Siddique</a>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -69,9 +68,9 @@
                                 <i class="uil uil-file-landscape-alt nav__icon"></i> Publications
                             </a>
                         </li>
-                        <!-- <li class="nav__item">
-                            <a href="#life" class="nav__link"> <i class="uil uil-envelope nav__icon"></i> Life </a>
-                        </li> -->
+                        <li class="nav__item">
+                            <a href="#life" class="nav__link"> <i class="uil uil-image nav__icon"></i> Life </a>
+                        </li>
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
@@ -162,9 +161,9 @@
                 <div class="about__container container grid">
                     <div class="about__data">
                         <p class="about__description">
-                            Accomplished computer engineering graduate with a desire to pursue and excel in machine
-                            learning, computer vision, and deep learning roles. Have published academic works as well as
-                            graduate research experience. Eager to join and contribute to a high-performing team.
+                            Hello! My name is Nahian, and I am a graduate student at Purdue University studying
+                            Electrical and Computer Engineering. I enjoy building cool toys and solving complex
+                            algorithmic problems. I mainly utilize Keras and PyTorch for my deep learning projects.
                         </p>
                         <div class="about__info">
                             <div>
@@ -192,7 +191,6 @@
             <!--==================== EXPERIENCE ====================-->
             <section class="experience section" id="experience">
                 <h2 class="section__title">Experience</h2>
-                <!-- <span class="section__subtitle"></span> -->
                 <div class="experience__container container grid">
                     <div class="experience__section">
                         <!--==================== EXPERIENCE 1 ====================-->
@@ -308,7 +306,6 @@
             <!--==================== EDUCATION ====================-->
             <section class="education section" id="education">
                 <h2 class="section__title">Education</h2>
-                <!-- <span class="section__subtitle"></span> -->
                 <div class="education__container container grid">
                     <div class="education__section">
                         <!--==================== EDUCATION 1 ====================-->
@@ -340,8 +337,7 @@
             <!--==================== PUBLICATIONS ====================-->
             <section class="publications section" id="publications">
                 <h2 class="section__title publications__section-title">Publications</h2>
-                <!-- <span class="section__subtitle"></span> -->
-                <div class="publications__container container grid">
+                <div class="publications__container container">
                     <div class="publications__tabs">
                         <div class="publications__button button--flex publications__active" data-target="#journal">
                             <i class="uil uil-book-alt publications__icon"></i>
@@ -532,8 +528,28 @@
                 </div>
             </section>
 
-            <!--==================== SOCIALS ====================-->
-            <section class="life section" id="life"></section>
+            <!--==================== LIFE ====================-->
+            <section class="life section" id="life">
+                <h2 class="section__title">Life</h2>
+                <div class="life__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="life__content grid swiper-slide">
+                            <img src="assets/img/showcase4.jpg" alt="" class="life__img" />
+                        </div>
+                        <div class="life__content grid swiper-slide">
+                            <img src="assets/img/2020-07-11.jpg" alt="" class="life__img" />
+                        </div>
+                        <div class="life__content grid swiper-slide">
+                            <img src="assets/img/showcase5.jpg" alt="" class="life__img" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-life-icon"></i></div>
+                    <div class="swiper-button-prev"><i class="uil uil-angle-left-b swiper-life-icon"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== END MAIN ====================-->
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -549,7 +565,7 @@
         </a>
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
