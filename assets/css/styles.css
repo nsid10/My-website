@@ -23,6 +23,7 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --code-block-color: hsl(var(--hue-color), 10%, 92%);
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -38,6 +39,7 @@
     --smaller-font-size: 0.75rem;
 
     /*========== Font weight ==========*/
+    --font-light: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
 
@@ -82,6 +84,7 @@ body.dark-theme {
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    --code-block-color: hsl(var(--hue-color), 25%, 19%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -137,6 +140,17 @@ img {
     height: auto;
 }
 
+code {
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+    font-feature-settings: normal;
+    font-weight: var(--font-light);
+    background: var(--code-block-color);
+    padding: 1px 6px;
+    margin: 0 2px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
     padding-top: 4rem;
@@ -147,14 +161,7 @@ img {
     margin-bottom: var(--mb-3);
 }
 
-.section__subtitle {
-    display: block;
-    font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-3);
-}
-
-.section__title,
-.section__subtitle {
+.section__title {
     text-align: center;
 }
 /*==================== LAYOUT ====================*/
@@ -393,6 +400,11 @@ img {
     align-self: center;
 }
 
+.about__subtitle {
+    text-align: center;
+    font-size: var(--normal-font-size);
+}
+
 .about__location {
     font-size: var(--h2-font-size);
     color: var(--first-color);
@@ -400,7 +412,7 @@ img {
 
 .about__description {
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-2);
 }
 
 .about__break {
@@ -427,6 +439,22 @@ img {
 .about__info-title {
     display: block;
     text-align: center;
+}
+
+.about__skills {
+    color: var(--text-color);
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__skills-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin-left: var(--mb-0-25);
+    margin-bottom: var(--mb-0-75);
 }
 
 .about__buttons {
@@ -639,7 +667,6 @@ img {
 /*==================== FOOTER ====================*/
 .footer__bg {
     background-color: var(--first-color-second);
-    /* padding: 6px 0 10px; */
 }
 
 .footer__copy {
@@ -770,10 +797,6 @@ img {
 
     .section {
         padding-top: 6rem;
-    }
-
-    .section__subtitle {
-        margin-bottom: 4rem;
     }
 
     .header {
