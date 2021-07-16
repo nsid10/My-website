@@ -68,6 +68,7 @@
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
+        --semi-font-size: 0.9rem;
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
     }
@@ -143,12 +144,12 @@ img {
 code {
     font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
     font-feature-settings: normal;
+    font-size: var(--semi-font-size);
     font-weight: var(--font-light);
     background: var(--code-block-color);
     padding: 1px 6px;
     margin: 0 2px;
     border-radius: 5px;
-    font-size: 0.9rem;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
