@@ -394,6 +394,10 @@ code {
     align-items: center;
 }
 /*==================== ABOUT ====================*/
+.about {
+    padding-bottom: 7.5rem;
+}
+
 .about__img {
     width: 200px;
     border-radius: 0.5rem;
@@ -461,208 +465,6 @@ code {
 .about__buttons {
     display: flex;
     justify-content: center;
-}
-
-/*==================== EXPERIENCE ====================*/
-.experience__section {
-    justify-self: center;
-    max-width: 710px;
-}
-
-.experience__data {
-    padding-bottom: 2rem;
-}
-
-.experience__header {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    cursor: pointer;
-    max-width: 500px;
-    margin: auto;
-    margin-bottom: var(--mb-1);
-}
-
-.experience__title {
-    font-size: var(--h3-font-size);
-}
-
-.experience__subtitle,
-.experience__calender {
-    font-size: var(--normal-font-size);
-}
-
-.experience__arrow {
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-left: auto;
-    transition: 0.3s;
-}
-
-.experience__arrow:hover {
-    color: var(--first-color-alt);
-}
-
-.experience__close .experience__description {
-    height: 0;
-    overflow: hidden;
-}
-
-.experience__open .experience__description {
-    height: max-content;
-    margin-bottom: var(--mb-1);
-}
-
-.experience__open .experience__arrow {
-    transform: rotate(-180deg);
-}
-
-.experience__description {
-    color: var(--title-color);
-    padding: var(--mb-0-25) var(--mb-2);
-    font-size: var(--normal-font-size);
-}
-
-.experience__list {
-    color: var(--first-color);
-}
-
-.experience__list-bullet {
-    color: var(--text-color);
-}
-
-/*==================== EDUCATION ====================*/
-.education__section {
-    justify-self: center;
-    max-width: 700px;
-}
-
-.education__data {
-    padding-bottom: 3rem;
-}
-
-.education__title {
-    font-size: var(--h3-font-size);
-}
-
-.education__subtitle,
-.education__calender {
-    font-size: var(--normal-font-size);
-}
-
-/*==================== PUBLICATIONS ====================*/
-.publications__section-title {
-    margin-bottom: var(--mb-1);
-}
-
-.publications__tabs {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-1);
-}
-
-.publications__button {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    cursor: pointer;
-}
-
-.publications__button:hover {
-    color: var(--first-color);
-}
-
-.publications__button.publications__active {
-    color: var(--first-color);
-}
-
-.publications__icon {
-    font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
-}
-
-.publications [data-content] {
-    display: none;
-}
-
-.publications__active[data-content] {
-    display: block;
-}
-
-.publications__container {
-    padding-left: 2.5rem;
-    padding-right: 2rem;
-}
-
-.publications__section {
-    justify-self: center;
-}
-
-.publications__data {
-    padding-bottom: 2rem;
-}
-
-.publications__list::marker {
-    content: "[" counter(list-item, decimal) "] ";
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    color: var(--title-color);
-}
-.publications__list {
-    display: list-item;
-}
-
-.publications__highlight {
-    color: var(--title-color);
-}
-
-.publications__link-icon {
-    font-size: var(--h3-font-size);
-    color: var(--first-color);
-}
-
-.publications__link-icon:hover {
-    color: var(--first-color-alt);
-}
-
-/*==================== LIFE ====================*/
-.life {
-    margin-bottom: 8rem;
-}
-
-.life__content {
-    padding: 3rem 1.5rem;
-}
-
-.life__img {
-    width: 426px;
-    border-radius: 1rem;
-    justify-self: center;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--first-color);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    content: "";
-}
-
-.swiper-life-icon {
-    font-size: 2rem;
-    color: var(--first-color);
-}
-
-.swiper-life-icon:hover {
-    color: var(--first-color-alt);
-}
-
-.swiper-button-next {
-    right: -0.5rem;
-}
-
-.swiper-button-prev {
-    left: -0.5rem;
 }
 
 /*==================== FOOTER ====================*/
@@ -912,6 +714,10 @@ code {
 @media screen and (min-width: 1600px) {
     .section {
         padding-top: 11rem;
+    }
+
+    .about {
+        padding-bottom: 12rem;
     }
 
     .nav {
